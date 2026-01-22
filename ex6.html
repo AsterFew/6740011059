@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวเปลี่ยนข้อความ</title>
+</head>
+<body>
+    <h1>โจทย์: เปลี่ยนข้อความด้วย JavaScript</h1>
+
+    <p id="displayText">นี่คือข้อความเริ่มต้นที่คุณต้องการเปลี่ยน</p>
+    <button id="changeButton">เปลี่ยนข้อความ</button>
+
+    <script>
+
+        const displayText = document.getElementById("displayText");
+
+        const changeButton = document.getElementById("changeButton");
+
+        changeButton.addEventListener("click", function () {
+            displayText.textContent = "ข้อความใหม่ได้ปรากฏขึ้นแล้ว!";
+        });
+    </script>
+      <a href="index.html">← กลับหน้าแรก</a>
+
+</body>
+</html>

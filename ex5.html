@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ตัวนับจำนวนคลิก</title>
+</head>
+<body>
+
+  <p>
+    จำนวนคลิก: <span id="click-count">0</span>
+  </p>
+
+  <button type="button" onclick="countClick()">
+    คลิกที่นี่!
+  </button>
+
+  <script>
+    let clickCount = 0;
+
+    function countClick() {
+      clickCount++;
+      document.getElementById("click-count").textContent = clickCount;
+    }
+  </script>
+    <a href="index.html">← กลับหน้าแรก</a>
+
+
+</body>
+</html>
